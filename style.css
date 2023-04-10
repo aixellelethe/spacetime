@@ -3,12 +3,54 @@
 /* practicing global css values below. syntax: --<name>:<value>; -ash*/
 
 :root{
+    /* Colors */
+
+    --primary-pink: hsl(293, 88%, 56%);
+    --primary-indigo: hsl(259, 84%, 19%);
+    --primary-purple: hsl(266, 100%, 60%);
+
+    --accent-blue: hsl(223, 100%, 64%);
+    --accent-green: hsl(140, 42%, 52%);
+
+    --neutral-white: hsl(0, 0%, 100%);
+    --neutral-gray: hsl(214, 3%, 41%);
+
+    --bkgrd-primary: hsl(243, 38%, 11%);
+    --bkgrd-secondary: hsl(258, 78%, 14%);
+
+    --primary-grad: -webkit-linear-gradient(320deg, var(--primary-pink) 0%, var(--primary-purple) 35%,  var(--primary-indigo) 100%);
+    --text-grad:    -webkit-linear-gradient(320deg, var(--primary-pink) 0%, var(--primary-purple) 35%, var(--primary-pink) 100%);
+
+    /* Fonts */
+
+    --ff-primary:'Roboto Condensed', sans-serif;
+
+    --ff-body: var(--ff-primary);
+    --ff-heading: var(--ff-primary);
+
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-bold: 700;
+
+    --fs-16px: 1.6rem;
+    --fs-21px: 2.1rem;
+    --fs-32px: 3.2rem;
+    --fs-36px: 3.6rem;
+    --fs-48px: 4.8rem;
+
+    --fs-body: var(--fs-16px);
+    --fs-nav: var(--fs-16px);
+    --fs-button: var(--fs-16px);
+    --fs-heading: var(--fs-48px);
+    --fs-heading2: var(--fs-36px);
+    --fs-quote: var(--fs-36px);
+
 
 }
 
 
 /* // https://piccalil.li/blog/a-modern-css-reset */
-/* using this as a baseline -ash*/
+/* using this as a baseline, made a few changes based on learning -ash*/
 
 /* Box sizing rules */
 *,
@@ -18,6 +60,7 @@
 }
 
 /* Remove default margin */
+/* changed this to include all elements, and everything inherits fonts */
 *{
     margin: 0;
     padding: 0;
@@ -38,6 +81,10 @@ html:focus-within {
 html,
 body{
     height: 100%;
+}
+
+html{
+    font-size: 62.5%;
 }
 
 /* Set core body defaults */
@@ -82,3 +129,120 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+
+/* Utility Classes */
+
+/* Colors */
+
+.text-body-white{
+    color: var(--neutral-white);
+    font-family: var(--ff-body);
+}
+
+.text-body-gray{
+    color: var(--neutral-gray);
+    font-family: var(--ff-body);
+}
+
+.text-accent-blue{
+ color: var(--accent-blue);
+ font-family: var(--ff-body);
+}
+
+.text-accent-green{
+    color: var(--accent-green);
+    font-family: var(--ff-body);
+   }
+
+.bg-main{
+    background: var(--bkgrd-primary);
+}
+
+.bg-second{
+    background: var(--bkgrd-secondary);
+}
+
+.primary-grad{ 
+    background: var(--primary-grad);
+}
+
+
+.text-primary-grad{ 
+    background: var(--text-grad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: var(--ff-primary);
+}
+
+/* Font size */
+
+.fs-heading{font-size: var(--fs-heading);}
+
+.fs-heading2{font-size: var(--fs-heading2);}
+
+.fs-nav{font-size: var(--fs-nav);}
+
+.fs-button{font-size: var(--fs-button);}
+
+.fs-quote{font-size: var(--fs-quote);}
+
+.fs-body{font-size: var(--fs-body);}
+
+
+/* Text weight */
+
+.fw-light{ font-weight: var(--fw-light);}
+.fw-regular{ font-weight: var(--fw-regular);}
+.fw-bold{ font-weight: var(--fw-bold);}
+
+/* Boxes */
+
+.container{
+    
+}
+
+.flexcontainer{
+    display: flex;
+}
+
+.gridcontainer{
+    display: grid;
+}
+
+.spacebetween{
+    justify-content: space-between;
+}
+
+.aligncenter{
+    gap: 1em;
+    margin: 1em;
+}
+
+/* General Styling */
+
+
+li:hover{
+    background-color: var(--neutral-white);
+    -webkit-background-clip: text;
+}
+
+
+.button{
+    color: var(--neutral-white);
+    background-color: var(--accent-blue);
+    border: 0;
+    text-decoration: none;
+    border-radius: 100vmax;
+    padding: .5em 2em;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-button);
+    font-family: var(--ff-body);
+    cursor: pointer;
+    box-shadow: .1em .1em .5em var(--neutral-gray) ;
+}
+
+.button:hover{
+    background: var(--primary-grad);
+}
+

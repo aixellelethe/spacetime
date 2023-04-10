@@ -5,18 +5,39 @@
 
 ## Colors
 
- { color: hsla(258, 83, 19, 1); } `hsl(258,83%,19%)`
- { color: hsla(258, 78, 14, 1); } `#ffffff`
- { color: hsla(292, 88, 56, 1); }
- { color: hsla(241, 37, 10, 1); }
- { color: hsla(135, 62, 39, 1); }
+- primary-pink: hsl(293, 88%, 56%)
+- primary-indigo: hsl(259, 84%, 19%)
+- primary-purple: hsl(266, 100%, 60%)
 
+- accent-blue: hsl(223, 100%, 64%)
+- accent-green: hsl(140, 42%, 52%)
+
+- neutral-white: hsl(0, 0%, 100%)
+- neutral-gray: hsl(214, 3%, 41%) 
+
+- bkgrd-primary: hsl(243, 38%, 11%);
+- bkgrd-secondary: hsl(258, 78%, 14%);
+ 
 ### Primary
+- primary-pink: hsl(293, 88%, 56%)
+- primary-indigo: hsl(259, 84%, 19%)
+- primary-purple: hsl(266, 100%, 60%)
+
+
+- Gradients
 
 ### Neutral
+- Background: 
+    - bkgrd-primary: hsl(243, 38%, 11%);
+    - bkgrd-secondary: hsl(258, 78%, 14%);
 
-### Accent
+- Text:
+    - neutral-white: hsl(0, 0%, 100%)
+    - neutral-gray: hsl(214, 3%, 41%) 
 
+### Accents
+- accent-blue: hsl(223, 100%, 64%)
+- accent-green: hsl(140, 42%, 52%)
 
 ## Typography
 
@@ -24,6 +45,6 @@
 - 16px
 
 ### Fonts
-- Roboto condensed, in italics and regular
+- ff-primary:'Roboto Condensed', sans-serif;
 
 ## Icons
