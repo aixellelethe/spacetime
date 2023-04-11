@@ -80,9 +80,11 @@ html:focus-within {
 
 html,
 body{
-    height: 100%;
+    height: 100vw;
+    margin: auto;
 }
 
+/* This is to set the default size to 10px, easy math for rem font size -ash */
 html{
     font-size: 62.5%;
 }
@@ -90,7 +92,10 @@ html{
 /* Set core body defaults */
 body {
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
+  line-height: 1.2;
+  font-family: var(--ff-body);
+  font-size: var(--fs-body);
+  color: var(--neutral-white);
 }
 
 /* A elements that don't have a class get default styles */
@@ -199,7 +204,8 @@ select {
 /* Boxes */
 
 .container{
-    
+  margin: auto;
+  padding: 1em 8em;
 }
 
 .flexcontainer{
@@ -212,21 +218,38 @@ select {
 
 .spacebetween{
     justify-content: space-between;
+    flex: 1;
 }
 
-.aligncenter{
-    gap: 1em;
-    margin: 1em;
+.alignitems{
+  align-items: center;
 }
+
+/* Images */
+
+img{
+  width: auto;
+  height: auto;
+}
+
 
 /* General Styling */
 
+
+/* nav */
 
 li:hover{
     background-color: var(--neutral-white);
     -webkit-background-clip: text;
 }
 
+.navlinks{
+  gap: 1em;
+  margin: 1em;
+  font-size: var(--fs-body);
+}
+
+/* buttons */
 
 .button{
     color: var(--neutral-white);
@@ -237,12 +260,36 @@ li:hover{
     padding: .5em 2em;
     font-weight: var(--fw-bold);
     font-size: var(--fs-button);
-    font-family: var(--ff-body);
     cursor: pointer;
     box-shadow: .1em .1em .5em var(--neutral-gray) ;
 }
 
 .button:hover{
     background: var(--primary-grad);
+}
+
+/* titlecards */
+
+.titlecard{
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.titlecard-left{
+  padding-right: 2em;
+}
+.titlecard-left p{
+  max-width: 80%;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+.titlecard-right{
+ max-width: 50%;
+}
+
+
+/* misc classes */
+.logo{
+  flex: 1;
 }
 

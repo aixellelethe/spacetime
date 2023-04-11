@@ -16,7 +16,14 @@ Going to make use of nav header footer main and so on.
 I made a few changes here for best practice, and have read and
 watched some supplementary material to help me understand more about document setup.
 
-3. Installed color-picker on machine to look for color codes. I want to create a theme for the site that is not the default in the lesson
+3. Installed color-picker on machine to look for color codes. I want to create a theme for the site that is not the default in the lesson.
 
-4. I picked a theme and also learned how to make these markdown files look a little better. Added [Style-Guide.md](./style-guide.md) to keep track of overall theme of the website.
+4. Picked theme colors and also learned how to make these markdown files look a little better. Added [Style-Guide.md](./style-guide.md) to keep track of overall theme of the website.
+
+5. Added a ton of :root variables for my CSS. (can't wait to learn SaSS!) Learned about the 62.5% font sizing rule, as well as rem
+
+6. Fixed the structure of the html for the header and the title card
+Also added utility classes so any section can have them and add specific styling I want. Specific ones have specific classes, as per usual. Cuts down on making a million classes with specificity.
+
+7. Did not overuse flex for my right and left title cards. Struggled adding spacing to my left and right title cards, may look to using alternate solutions. For now, added some margins and padding.
 
