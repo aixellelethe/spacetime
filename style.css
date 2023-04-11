@@ -84,6 +84,7 @@ body{
     margin: auto;
 }
 
+
 /* This is to set the default size to 10px, easy math for rem font size -ash */
 html{
     font-size: 62.5%;
@@ -109,6 +110,7 @@ picture,
 svg {
   max-width: 100%;
   display: block;
+ 
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -180,6 +182,8 @@ select {
     font-family: var(--ff-primary);
 }
 
+/* Fonts and Text */
+
 /* Font size */
 
 .fs-heading{font-size: var(--fs-heading);}
@@ -201,11 +205,21 @@ select {
 .fw-regular{ font-weight: var(--fw-regular);}
 .fw-bold{ font-weight: var(--fw-bold);}
 
+/* Paragraph Flow*/
+
+.flow * + *{
+ margin-top: var(--flowspacer, 2em);
+}
+
 /* Boxes */
 
 .container{
-  margin: auto;
-  padding: 1em 8em;
+  --max-width: 1110px;
+  --padding: 8em;
+
+  margin-inline: auto;
+
+  width: min(var(--max-width), 100% - (var(--padding) * 2));
 }
 
 .flexcontainer{
@@ -214,6 +228,8 @@ select {
 
 .gridcontainer{
     display: grid;
+    grid-auto-flow: column;
+    gap: 1rem;
 }
 
 .spacebetween{
@@ -227,8 +243,8 @@ select {
 
 /* Images */
 
-img{
-  width: auto;
+.milkyway{
+  width: 100vw;
   height: auto;
 }
 
@@ -280,13 +296,31 @@ li:hover{
 }
 .titlecard-left p{
   max-width: 80%;
-  margin-top: 0.5em;
-  margin-bottom: 1em;
 }
 .titlecard-right{
  max-width: 50%;
 }
 
+
+/* Planet Cards */
+
+.planetcard{
+  width: 100%;
+}
+
+.planetheader{
+  text-align: center;
+}
+
+.planetcards-contents div{
+  
+  text-align: center;
+  border:12px solid var(--primary-pink);
+  margin: 1em;
+  height: 300px;
+  width: 250px;
+  
+}
 
 /* misc classes */
 .logo{
