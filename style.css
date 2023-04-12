@@ -309,17 +309,61 @@ li:hover{
 }
 
 .planetheader{
+  padding-top: 1em;
+  padding-bottom: 1em;
   text-align: center;
 }
 
 .planetcards-contents div{
   
   text-align: center;
-  border:12px solid var(--primary-pink);
+  
   margin: 1em;
   height: 300px;
   width: 250px;
-  
+}
+
+.planetcards-contents img{
+
+  border: .25em solid var(--primary-indigo);
+  border-radius: 1em;
+  box-shadow: .1em .1em .25em var(--primary-purple) ;
+}
+
+.photocredit{
+  color: var(--primary-purple);
+  text-align: center;
+  font-size: 1.5ch;
+  padding-bottom: 1em;
+}
+
+/* Quote Box */
+
+.quotetextbox{
+  padding: 3em 1em;
+}
+
+.quotetext{
+  font-style: italic;
+  font-size: 2.5ch;
+}
+
+.quoteauthor{
+  padding-right: 1em;
+  padding-top: .2em;
+  font-size: var(--fs-21px);
+  text-align: right;
+  color:var(--accent-green);
+}
+
+/* Call to action */
+
+.ctaction{
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+.ctabox{
+  justify-content: space-between;
 }
 
 /* misc classes */
