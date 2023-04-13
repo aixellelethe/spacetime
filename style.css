@@ -80,7 +80,7 @@ html:focus-within {
 
 html,
 body{
-    height: 100vw;
+    min-height: 100%;
     margin: auto;
 }
 
@@ -359,15 +359,18 @@ li:hover{
 /* Call to action */
 
 .ctaction{
-  margin-bottom: 1em;
-  padding-bottom: 1em;
+  border-radius: 10px;
+
 }
-.ctabox{
-  justify-content: space-between;
+.ctaction .ctabox{
+  justify-content: space-around;
+  padding: 2em;
 }
 
-/* misc classes */
-.logo{
-  flex: 1;
+/* Footer */
+
+footer{
+  text-align: center;
+
 }
 
