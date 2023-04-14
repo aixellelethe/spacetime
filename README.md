@@ -27,3 +27,6 @@ Also added utility classes so any section can have them and add specific styling
 
 7. Did not overuse flex for my right and left title cards. Struggled adding spacing to my left and right title cards, may look to using alternate solutions. For now, added some margins and padding.
 
+8. Fixed some spacing with the footer and added a background color to the body to make things less awkward.
+
+9. Future improvements would be to figure out how to make things stack correctly, keep the images from shrinking with resizing. Learned quite a bit about structure. I will hopefully learn how to use grid, as flexbox can be a bit finicky with my methods applied.
