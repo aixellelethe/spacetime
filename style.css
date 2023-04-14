@@ -97,6 +97,7 @@ body {
   font-family: var(--ff-body);
   font-size: var(--fs-body);
   color: var(--neutral-white);
+  background: var(--bkgrd-primary);
 }
 
 /* A elements that don't have a class get default styles */
@@ -365,6 +366,13 @@ li:hover{
 .ctaction .ctabox{
   justify-content: space-around;
   padding: 2em;
+  align-items: center;
+  margin-bottom: 5em;
+}
+
+.ctabox .button {
+  max-width: 115px;
+  min-height: 40px;
 }
 
 /* Footer */
